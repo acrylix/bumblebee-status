@@ -1,48 +1,71 @@
 {
-	"icons": [ "awesome-fonts" ],
-	"colors": [ "wal" ],
-	"defaults": {
-		"separator-block-width": 0,
-		"critical": {
-			"fg": "cursor",
-			"bg": "color5"
-		},
-		"warning": {
-			"fg": "cursor",
-			"bg": "color6"
-		},
-		"default_separators": false
-	},
-	"cycle": [
-		{
-			"fg": "foreground",
-			"bg": "background"
-		},
-		{
-			"fg": "background",
-			"bg": "foreground"
-		}
-	],
-	"dnf": {
-		"good": {
-			"fg": "background",
-			"bg": "color3"
-		}
-	},
-	"apt": {
-		"good": {
-			"fg": "background",
-			"bg": "color3"
-		}
-	},
-	"battery": {
-		"charged": {
-			"fg": "background",
-			"bg": "color3"
-		},
-		"AC": {
-			"fg": "background",
-			"bg": "color3"
-		}
-	}
+  "icons": ["awesome-fonts"],
+  "colors": ["wal"],
+  "defaults": {
+    "separator-block-width": 0,
+    "critical": {
+      "fg": "cursor",
+      "bg": "color5"
+    },
+    "warning": {
+      "fg": "cursor",
+      "bg": "color6"
+    },
+    "default_separators": false,
+    "separator": ""
+  },
+  "cycle": [
+    {
+      "fg": "foreground",
+      "bg": "background"
+    },
+    {
+      "fg": "foreground",
+      "bg": "background"
+    }
+  ],
+  "amixer": {
+    "muted": {
+      "fg": "foreground",
+      "bg": "background"
+    }
+  },
+  "time": {
+    "fg": "background",
+    "bg": "foreground"
+  },
+  "date": {
+    "fg": "background",
+    "bg": "foreground"
+  },
+  "dnf": {
+    "good": {
+      "fg": "background",
+      "bg": "color3"
+    }
+  },
+  "apt": {
+    "good": {
+      "fg": "background",
+      "bg": "color3"
+    }
+  },
+  "battery": {
+    "charged": {
+      "fg": "background",
+      "bg": "color3"
+    },
+    "warning": {
+      "fg": "foreground",
+      "bg": "background"
+    },
+    "critical": {
+      "fg": "background",
+      "bg": "#e74c3c"
+    },
+    "AC": {
+      "fg": "background",
+      "bg": "color3"
+    }
+  }
 }

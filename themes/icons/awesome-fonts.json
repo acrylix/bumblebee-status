@@ -12,7 +12,7 @@
 	"dnf": { "prefix": "" },
 	"apt": { "prefix": "" },
 	"pacman": { "prefix": "" },
-	"brightness": { "prefix": "" },
+	"brightness": { "prefix": "" },
 	"load": { "prefix": "" },
 	"layout": { "prefix": "" },
 	"layout-xkb": { "prefix": "" },
@@ -65,7 +65,7 @@
     },
 	"nic": {
 		"wireless-up": { "prefix": "" },
-		"wireless-down": { "prefix": "" },
+		"wireless-down": { "prefix": "" },
 		"wired-up": { "prefix": "" },
 		"wired-down": { "prefix": "" },
 		"tunnel-up": { "prefix": "" },
@@ -138,8 +138,8 @@
     },
     "sensors2": {
 		"temp": { "prefix": "" },
-		"fan": { "prefix": "" },
-		"cpu": { "prefix": "" }
+		"fan": { "prefix": "" },
+		"cpu": { "prefix": "" }
     },
     "traffic":{
 	    "rx": { "prefix": "" },

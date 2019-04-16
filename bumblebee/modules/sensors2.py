@@ -45,6 +45,7 @@ class Module(bumblebee.engine.Module):
         return [widget_type]
 
     def _create_widgets(self):
+        tempExists = False
         widgets = []
         show_temp = bumblebee.util.asbool(self.parameter("showtemp", "true"))
         show_fan = bumblebee.util.asbool(self.parameter("showfan", "true"))
@@ -69,14 +70,16 @@ class Module(bumblebee.engine.Module):
                     widget.set("package", package)
                     widget.set("field", field)
                     widget.set("adapter", adapter)
-                    if "temp" in field and show_temp:
+                    if "temp" in field and show_temp and not tempExists:
                         # seems to be a temperature
                         widget.set("type", "temp")
                         widgets.append(widget)
+                        tempExists = True
                     if "fan" in field and show_fan:
                         # seems to be a fan
                         widget.set("type", "fan")
                         widgets.append(widget)
+                        return widgets
                     elif show_other:
                         # everything else
                         widget.set("type", "other")

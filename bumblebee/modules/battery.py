@@ -58,10 +58,10 @@ class Module(bumblebee.engine.Module):
             if estimate == power.common.TIME_REMAINING_UNLIMITED:
                 return None
             if estimate == power.common.TIME_REMAINING_UNKNOWN:
-                return ""
+                return "??"
         except Exception:
-            return ""
-        return bumblebee.util.durationfmt(estimate*60, shorten=True, suffix=True) # estimate is in minutes
+            return "!"
+        return "({})".format(bumblebee.util.durationfmt(estimate*60, shorten=True, suffix=True)) # estimate is in minutes
 
     def capacity(self, widget):
         widget.set("capacity", -1)
