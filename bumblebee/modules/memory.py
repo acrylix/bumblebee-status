@@ -58,7 +58,7 @@ class Module(bumblebee.engine.Module):
             "total": bumblebee.util.bytefmt(data["MemTotal"]),
             "available": bumblebee.util.bytefmt(data["MemAvailable"]),
             "free": bumblebee.util.bytefmt(data["MemFree"]),
-            "used": bumblebee.util.bytefmt(used),
+            "used": bumblebee.util.bytefmt(used) ,
             "percent": float(used)/float(data["MemTotal"])*100.0
         }
 
