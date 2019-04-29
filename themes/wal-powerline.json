@@ -26,7 +26,13 @@
   ],
   "amixer": {
     "muted": {
-      "fg": "foreground",
+      "fg": "#e67e22",
+      "bg": "background"
+    }
+  },
+  "nic": {
+    "wireless-down": {
+      "fg": "#eb2f06",
       "bg": "background"
     }
   },
@@ -35,8 +41,8 @@
     "bg": "foreground"
   },
   "date": {
-    "fg": "background",
-    "bg": "foreground"
+    "fg": "foreground",
+    "bg": "background"
   },
   "dnf": {
     "good": {

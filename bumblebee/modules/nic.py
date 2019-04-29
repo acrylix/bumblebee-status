@@ -12,7 +12,9 @@ Parameters:
 """
 
 import netifaces
-import subprocess
+# import subprocess
+from subprocess import *
+from fractions import Fraction
 
 import bumblebee.util
 import bumblebee.input
@@ -95,6 +97,7 @@ class Module(bumblebee.engine.Module):
             if not widget:
                 widget = bumblebee.output.Widget(name=intf)
                 widgets.append(widget)
+            
             # join/split is used to get rid of multiple whitespaces (in case SSID is not available, for instance
             widget.full_text(" ".join(self._format.format(ip=", ".join(addr),intf=intf,state=state,ssid=self.get_ssid(intf)).split()))
             widget.set("intf", intf)
@@ -108,9 +111,15 @@ class Module(bumblebee.engine.Module):
     def get_ssid(self, intf):
         if self._iswlan(intf):
             try:
-                return subprocess.check_output([self.iwgetid,"-r",intf]).strip().decode('utf-8')
+                shell_cmd = 'iwconfig {} | grep Link | grep -o "[0-9]*/[0-9]*"'.format('wlp2s0')
+                proc = Popen(shell_cmd, shell=True, stdout=PIPE, stderr=PIPE)
+                output, err = proc.communicate()
+                signal = output.decode('utf-8').strip()
+                signal_perc = "{0:.0%} ".format(float(sum(Fraction(s) for s in signal.split())))
+                return signal_perc + check_output([self.iwgetid,"-r",intf]).strip().decode('utf-8')
             except:
                 return ""
         return ""
+
 
 # vim: tabstop=8 expandtab shiftwidth=4 softtabstop=4

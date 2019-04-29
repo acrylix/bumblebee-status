@@ -65,7 +65,7 @@
     },
 	"nic": {
 		"wireless-up": { "prefix": "" },
-		"wireless-down": { "prefix": "" },
+		"wireless-down": { "prefix": "" },
 		"wired-up": { "prefix": "" },
 		"wired-down": { "prefix": "" },
 		"tunnel-up": { "prefix": "" },
