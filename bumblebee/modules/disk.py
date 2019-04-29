@@ -52,7 +52,7 @@ class Module(bumblebee.engine.Module):
         if all(not param for param in (sused, ssize, spercent)):
             return self._format.format(path=self._path,
                                        used=used_str,
-                                       left=left_str,
+                                       left=left_str.replace('GiB', 'G'),
                                        size=size_str,
                                        percent=percent_str)
         else:
