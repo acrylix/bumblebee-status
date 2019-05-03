@@ -30,6 +30,10 @@
       "bg": "background"
     }
   },
+  "spotify": {
+    "fg": "#1ED760",
+    "bg": "background"
+  },
   "nic": {
     "wireless-down": {
       "fg": "#eb2f06",
@@ -58,7 +62,7 @@
   },
   "battery": {
     "charged": {
-      "fg": "background",
+      "fg": "#ecf0f1",
       "bg": "color3"
     },
     "warning": {

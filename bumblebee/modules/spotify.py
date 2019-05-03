@@ -66,8 +66,10 @@ class Module(bumblebee.engine.Module):
             spotify_iface = dbus.Interface(spotify, 'org.freedesktop.DBus.Properties')
             props = spotify_iface.Get('org.mpris.MediaPlayer2.Player', 'Metadata')
             playback_status = str(spotify_iface.Get('org.mpris.MediaPlayer2.Player', 'PlaybackStatus'))
+            title = props.get('xesam:title')
+            title = (title[:20] + '..') if len(title) > 20 else title
             self._song = self._format.format(album=str(props.get('xesam:album')),
-                                             title=str(props.get('xesam:title')),
+                                             title=str(title),
                                              artist=','.join(props.get('xesam:artist')),
                                              trackNumber=str(props.get('xesam:trackNumber')),
                                              playbackStatus=u"\u25B6" if playback_status=="Playing" else u"\u258D\u258D" if playback_status=="Paused" else "",)
