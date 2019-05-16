@@ -12,7 +12,7 @@
 	"dnf": { "prefix": "" },
 	"apt": { "prefix": "" },
 	"pacman": { "prefix": "" },
-	"brightness": { "prefix": "" },
+	"brightness": { "prefix": "" },
 	"load": { "prefix": "" },
 	"layout": { "prefix": "" },
 	"layout-xkb": { "prefix": "" },
@@ -137,7 +137,7 @@
         "prefix": ""
     },
     "sensors2": {
-		"temp": { "prefix": "" },
+		"temp": { "prefix": "" },
 		"fan": { "prefix": "" },
 		"cpu": { "prefix": "" }
     },

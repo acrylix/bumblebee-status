@@ -61,7 +61,7 @@ class Module(bumblebee.engine.Module):
                 return "??"
         except Exception:
             return "!"
-        return "({})".format(bumblebee.util.durationfmt(estimate*60, shorten=True, suffix=True)) # estimate is in minutes
+        return "({})".format(bumblebee.util.durationfmt(estimate*60, shorten=True, suffix=False)) # estimate is in minutes
 
     def capacity(self, widget):
         widget.set("capacity", -1)
