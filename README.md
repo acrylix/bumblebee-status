@@ -5,7 +5,7 @@
 [![Test Coverage](https://codeclimate.com/github/tobi-wan-kenobi/bumblebee-status/badges/coverage.svg)](https://codeclimate.com/github/tobi-wan-kenobi/bumblebee-status/coverage)
 [![Issue Count](https://codeclimate.com/github/tobi-wan-kenobi/bumblebee-status/badges/issue_count.svg)](https://codeclimate.com/github/tobi-wan-kenobi/bumblebee-status)
 
-**Many, many thanks to all contributors! As of now, 38 of the modules are from various contributors (!), and only 18 from myself.**
+**Many, many thanks to all contributors! As of now, 39 of the modules are from various contributors (!), and only 18 from myself.**
 
 ![Solarized Powerline](https://github.com/tobi-wan-kenobi/bumblebee-status/blob/master/screenshots/themes/powerline-solarized.png)
 
@@ -253,6 +253,10 @@ Iceberg (`-t iceberg`) (contributed by [whzup](https://github.com/whzup)):
 Iceberg Powerline (`-t iceberg-powerline`) (contributed by [whzup](https://github.com/whzup)):
 
 ![Iceberg Powerline](https://github.com/tobi-wan-kenobi/bumblebee-status/blob/master/screenshots/themes/iceberg-powerline.png)
+
+Iceberg Dark Powerline (`-t iceberg-dark-powerline`) (contributed by [gkeep](https://github.com/gkeep)):
+
+![Iceberg Dark Powerline](https://github.com/tobi-wan-kenobi/bumblebee-status/blob/master/screenshots/themes/iceberg-dark-powerline.png)
 
 Iceberg Rainbow (`-t iceberg-rainbow`) (contributed by [whzup](https://github.com/whzup)):
 
