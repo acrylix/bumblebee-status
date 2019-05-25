@@ -3,12 +3,12 @@
 		"separator": "", "padding": " ",
 		"unknown": { "prefix": "" }
 	},
-	"date": { "prefix": ""	},
+	"date": { "prefix": ""	},
 	"time": { "prefix": "" },
 	"datetime": { "prefix": "" },
 	"memory": { "prefix": "" },
-	"cpu": { "prefix": "" },
-	"disk": { "prefix": "" },
+	"cpu": { "prefix": "" },
+	"disk": { "prefix": "" },
 	"dnf": { "prefix": "" },
 	"apt": { "prefix": "" },
 	"pacman": { "prefix": "" },
@@ -170,10 +170,11 @@
     },
     "weather": {
        "clouds": { "prefix": "" },
-       "rain": { "prefix": "" },
+       "rain": { "prefix": "" },
        "snow": { "prefix": "" },
-       "clear": { "prefix": "" },
-       "thunder": { "prefix": "" }
+       "clear": { "prefix": "" },
+	   "thunder": { "prefix": "" },
+	   "unknown": { "prefix": "" }
     },
     "taskwarrior": {
        "prefix": "  "

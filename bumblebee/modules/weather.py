@@ -96,7 +96,7 @@ class Module(bumblebee.engine.Module):
             elif "cloud" in self._weather:
                 return ['clouds']
             else:
-                return []
+                return ['unknown']
 
         return []
 
