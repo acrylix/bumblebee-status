@@ -93,7 +93,7 @@ class Module(bumblebee.engine.Module):
         if "temp" in widget.get("field"):
             widget.full_text(u"{:0.01f}°C".format(data["input"]))
         elif "fan" in widget.get("field"):
-            widget.full_text(u"{:0.0f}RPM".format(data["input"]))
+            widget.full_text(u"{:0.0f} RPM".format(data["input"]))
         else:
             widget.full_text(u"{:0.0f}".format(data["input"]))
 

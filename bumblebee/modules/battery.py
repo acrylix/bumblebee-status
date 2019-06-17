@@ -61,7 +61,7 @@ class Module(bumblebee.engine.Module):
                 return "??"
         except Exception:
             return "!"
-        return "({})".format(bumblebee.util.durationfmt(estimate*60, shorten=True, suffix=False)) # estimate is in minutes
+        return "[{}]".format(bumblebee.util.durationfmt(estimate*60, shorten=True, suffix=False)) # estimate is in minutes
 
     def capacity(self, widget):
         widget.set("capacity", -1)
@@ -83,7 +83,7 @@ class Module(bumblebee.engine.Module):
         
         if bumblebee.util.asbool(self.parameter("showremaining", True))\
                 and self.getCharge(widget) == "Discharging":
-            output = "{} {}".format(output, self.remaining())
+            output = "{}{}".format(output, self.remaining())
 
         if bumblebee.util.asbool(self.parameter("showdevice", False)):
             output = "{} ({})".format(output, os.path.basename(widget.name))
